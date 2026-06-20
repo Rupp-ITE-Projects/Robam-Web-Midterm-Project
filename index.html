@@ -3,13 +3,510 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Robam</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./imgs/Robam_logo.png"
+      type="image/x-icon"
+    />
+
     <!-- tailwind link -->
     <link rel="stylesheet" href="./src/output.css" />
     <!-- aos link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body class="bg-[#F6F4F4] min-h-screen">
+    <!-- navbar -->
+    <section class="relative bg-[#1B1B1B] pb-10">
+      <div class="absolute inset-0">
+        <img
+          src="imgs/hero 1.png"
+          alt="hero section background"
+          class="w-full h-full object-cover opacity-200"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+      </div>
+
+      <div class="relative z-10">
+        <!-- Navbar -->
+        <nav class="w-full py-6">
+          <div class="max-w-6xl mx-auto px-4">
+            <div
+              id="navbar"
+              class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+            >
+              <div
+                id="glow"
+                class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
+              ></div>
+
+              <div class="relative z-10">
+                <a href="index.html">
+                  <img
+                    src="imgs/Robam_logo.png"
+                    alt="logo"
+                    class="w-14 h-14 object-contain"
+                  />
+                </a>
+              </div>
+
+              <ul
+                id="nav-menu"
+                class="relative hidden md:flex items-center gap-3"
+              >
+                <div
+                  id="nav-indicator"
+                  class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
+                ></div>
+
+                <li>
+                  <a
+                    href="index.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="pages/history.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    History
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="pages/contact.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="pages/about.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    About
+                  </a>
+                </li>
+              </ul>
+              <a
+                href="index.html"
+                class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition"
+              >
+                SIGN IN
+              </a>
+              <button class="relative z-10 md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7 h-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="max-w-7xl mx-auto min-h-[500px] md:min-h-[650px] flex items-center justify-center lg:justify-end px-6 sm:px-10 lg:px-20"
+        >
+          <div class="max-w-xl text-center lg:text-left">
+            <h1
+              class="font-primary text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+            >
+              ស្វាគមន៍មកកាន់ពិភពនៃសិល្បៈរបាំ និងវប្បធម៌ខ្មែរ.<br />
+            </h1>
+
+            <div class="flex justify-center mt-10">
+              <a
+                href="pages/history.html"
+                class="inline-block px-8 py-4 border border-white/70 rounded-2xl text-white font-semibold hover:bg-white/20 hover:text-white transition"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- section 1 -->
+      <section class="w-full px-4 sm:py-20 lg:py-15">
+        <!-- Heading -->
+        <div class="text-center">
+          <span class="font-primary uppercase text-sm tracking-wider">
+            របាំបុរាណខ្មែរ
+          </span>
+
+          <h2
+            class="mt-4 text-4xl md:text-5xl lg:text-7xl font-bold font-primary"
+          >
+            មរតកនៃចលនា
+            <span class="text-[#C89B3C]">ភាសានៃព្រលឹងជាតិ.</span>
+          </h2>
+
+          <p
+            class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed font-primary"
+          >
+            រាល់ក្បាច់ដៃ និងចលនានីមួយៗ ផ្ទុកនូវអត្ថន័យជ្រាលជ្រៅ បង្ហាញពីវប្បធម៌
+            ជំនឿ និងរឿងរ៉ាវដែលបានរស់រានមានជីវិត តាំងពីបុរាណកាលមក។
+          </p>
+        </div>
+      </section>
+
+      <section class="w-full px-4 py-16 sm:py-20 lg:py-20">
+        <div
+          class="relative w-full max-w-[1000px] mx-auto h-[clamp(150px,52vw,230px)] sm:h-[clamp(180px,46vw,280px)] lg:h-[clamp(200px,34vw,380px)]"
+        >
+          <!-- Card 1 -->
+          <div
+            class="absolute top-0 -translate-x-1/2 z-10 left-[14%] w-[clamp(68px,19vw,96px)] -rotate-[16deg] translate-y-[38%] sm:left-[11%] sm:w-[clamp(86px,19vw,130px)] sm:-rotate-[20deg] sm:translate-y-[42%] lg:left-[8%] lg:w-[clamp(110px,15vw,190px)] lg:-rotate-[24deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            tabindex="0"
+          >
+            <img
+              class="w-full h-full object-cover block"
+              src="imgs/hand 1.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="absolute top-0 -translate-x-1/2 z-20 left-[31%] w-[clamp(68px,19vw,96px)] -rotate-[8deg] translate-y-[10%] sm:left-[29%] sm:w-[clamp(86px,19vw,130px)] sm:-rotate-[10deg] sm:translate-y-[12%] lg:left-[28%] lg:w-[clamp(110px,15vw,190px)] lg:-rotate-[12deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            tabindex="0"
+          >
+            <img
+              class="w-full h-full object-cover block"
+              src="imgs/hand 2.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 3 (center) -->
+          <div
+            class="absolute top-0 -translate-x-1/2 z-30 left-[50%] w-[clamp(74px,20vw,104px)] rotate-0 -translate-y-[12%] sm:w-[clamp(94px,20vw,140px)] sm:-translate-y-[16%] lg:w-[clamp(120px,16vw,200px)] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            tabindex="0"
+          >
+            <img
+              class="w-full h-full object-cover block"
+              src="imgs/hand 3.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="absolute top-0 -translate-x-1/2 z-20 left-[69%] w-[clamp(68px,19vw,96px)] rotate-[8deg] translate-y-[10%] sm:left-[71%] sm:w-[clamp(86px,19vw,130px)] sm:rotate-[10deg] sm:translate-y-[12%] lg:left-[72%] lg:w-[clamp(110px,15vw,190px)] lg:rotate-[12deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            tabindex="0"
+          >
+            <img
+              class="w-full h-full object-cover block"
+              src="imgs/hand 4.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="absolute top-0 -translate-x-1/2 z-10 left-[86%] w-[clamp(68px,19vw,96px)] rotate-[16deg] translate-y-[38%] sm:left-[89%] sm:w-[clamp(86px,19vw,130px)] sm:rotate-[20deg] sm:translate-y-[42%] lg:left-[92%] lg:w-[clamp(110px,15vw,190px)] lg:rotate-[24deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            tabindex="0"
+          >
+            <img
+              class="w-full h-full object-cover block"
+              src="imgs/hand 5.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 -->
+      <section class="py-24 bg-[#FAFAFA]">
+        <div class="max-w-7xl mx-auto px-4">
+          <!-- Section Header -->
+          <div class="text-center mb-16">
+            <span class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium">
+              Traditional Khmer Arts
+            </span>
+
+            <h2
+              class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 font-primary"
+            >
+              ប្រភេទ
+              <span class="text-[#C89B3C]">របាំខ្មែរ</span>
+            </h2>
+
+            <p
+              class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed font-primary"
+            >
+              ស្វែងយល់ពីប្រភេទរបាំសំខាន់ៗ ដែលបង្ហាញពីសិល្បៈ វប្បធម៌
+              និងអត្តសញ្ញាណរបស់ជាតិខ្មែរ។
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card -->
+            <article
+              class="group relative overflow-hidden rounded-[32px] h-[450px]"
+            >
+              <img
+                src="imgs/apsara.webp"
+                alt="Apsara Dance"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-0 left-0 p-8 text-white">
+                <span class="text-[#C89B3C] text-sm uppercase">
+                  Classical Dance
+                </span>
+
+                <h3 class="text-3xl font-bold mt-2">របាំអប្សរា</h3>
+
+                <p class="mt-3 text-white/80">
+                  Symbolizing grace, beauty, and the rich heritage of Khmer
+                  civilization.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card -->
+            <article
+              class="group relative overflow-hidden rounded-[32px] h-[450px]"
+            >
+              <img
+                src="imgs/royal-ballet.jpg"
+                alt="Royal Ballet"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-0 left-0 p-8 text-white">
+                <span class="text-[#C89B3C] text-sm uppercase">
+                  Royal Heritage
+                </span>
+
+                <h3 class="text-3xl font-bold mt-2">របាំព្រះរាជទ្រព្យ</h3>
+
+                <p class="mt-3 text-white/80">
+                  The royal classical dance tradition of Cambodia.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card -->
+            <article
+              class="group relative overflow-hidden rounded-[32px] h-[450px]"
+            >
+              <img
+                src="imgs/folk-dance.jpg"
+                alt="Folk Dance"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-0 left-0 p-8 text-white">
+                <span class="text-[#C89B3C] text-sm uppercase">
+                  Folk Tradition
+                </span>
+
+                <h3 class="text-3xl font-bold mt-2">របាំប្រជាប្រិយ</h3>
+
+                <p class="mt-3 text-white/80">
+                  Reflecting the daily lives and celebrations of Khmer
+                  communities.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card -->
+            <article
+              class="group relative overflow-hidden rounded-[32px] h-[450px]"
+            >
+              <img
+                src="imgs/lakhon-khol.jpg"
+                alt="Lakhon Khol"
+                class="w-full h-full object-cover transition duration-700 group-hover:scale-110"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute bottom-0 left-0 p-8 text-white">
+                <span class="text-[#C89B3C] text-sm uppercase">
+                  Masked Theatre
+                </span>
+
+                <h3 class="text-3xl font-bold mt-2">ល្ខោនខោល</h3>
+
+                <p class="mt-3 text-white/80">
+                  Traditional masked performance inspired by the Reamker epic.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 -->
+      <section class="py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+          <div
+            class="relative mx-auto w-full max-w-[1400px] h-[700px] md:h-[900px] lg:h-[1100px]"
+          >
+            <div class="absolute inset-0 bg-[#765420] rounded-[50%]"></div>
+
+            <img
+              src="imgs/top hand.png"
+              alt="Top Hand"
+              class="absolute z-20 top-[-30px] left-[-140px] w-[500px] md:w-[700px] lg:w-[950px] object-contain pointer-events-none"
+            />
+            <img
+              src="imgs/bottom hand.png"
+              alt="Bottom Hand"
+              class="absolute z-20 bottom-[-80px] right-[-140px] w-[500px] md:w-[700px] lg:w-[950px] object-contain pointer-events-none"
+            />
+
+            <div
+              class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-6"
+            >
+              <!-- Top Line -->
+              <div class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mb-8"></div>
+
+              <h2
+                class="text-white font-primary text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-relaxed max-w-4xl"
+              >
+                “ជីវិតយើងអាចរលត់ <br />
+                តែសិល្បៈនឹងនៅតែបន្តរហូតពីមួយជំនាន់ទៅមួយជំនាន់.”
+              </h2>
+
+              <!-- Bottom Line -->
+              <div class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mt-8"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="mt-30 bg-white">
+      <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-12">
+          <!-- Left -->
+          <div>
+            <img src="imgs/Robam_logo.png" alt="Robam Logo" class="w-20 mb-6" />
+
+            <div class="space-y-2">
+              <a
+                href="#"
+                class="block text-zinc-600 hover:text-[#C89B3C] transition"
+              >
+                Facebook
+              </a>
+
+              <a
+                href="#"
+                class="block text-zinc-600 hover:text-[#C89B3C] transition"
+              >
+                Instagram
+              </a>
+
+              <a
+                href="#"
+                class="block text-zinc-600 hover:text-[#C89B3C] transition"
+              >
+                YouTube
+              </a>
+            </div>
+          </div>
+
+          <!-- Center -->
+          <div>
+            <h3 class="font-semibold mt-10 mb-5">Navigation</h3>
+
+            <div class="space-y-3">
+              <a
+                href="index.html"
+                class="block text-zinc-600 hover:text-[#C89B3C]"
+              >
+                Home
+              </a>
+
+              <a
+                href="pages/history.html"
+                class="block text-zinc-600 hover:text-[#C89B3C]"
+              >
+                History
+              </a>
+
+              <a
+                href="pages/about.html"
+                class="block text-zinc-600 hover:text-[#C89B3C]"
+              >
+                About
+              </a>
+
+              <a
+                href="pages/contact.html"
+                class="block text-zinc-600 hover:text-[#C89B3C]"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+
+          <div class="md:text-right">
+            <h2 class="font-semibold mt-10 mb-5 mr-3">University</h2>
+            <img
+              src="imgs/Rupp_logo.png"
+              alt="Rupp Logo"
+              class="w-24 ml-auto"
+            />
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-zinc-200 text-center">
+          <p class="text-sm text-zinc-500">
+            © 2026 Robam — Traditional Khmer Dance Heritage
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
   <!-- aos script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <script src="js/hover.js"></script>
 </html>
