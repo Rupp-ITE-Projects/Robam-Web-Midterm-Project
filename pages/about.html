@@ -17,135 +17,134 @@
   </head>
   <body class="bg-[#F6F4F4] min-h-screen">
     <!-- navbar -->
-    <nav class="w-full py-6">
-      <div class="max-w-6xl mx-auto px-4">
-        <div
-          id="navbar"
-          class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
-        >
-          <div
-            id="glow"
-            class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
-          ></div>
+    <section class="relative min-h-screen">
+      <div class="absolute inset-0">
+        <img
+          src="../imgs/dancer 2.jpg"
+          alt="hero section background"
+          class="w-full h-full object-cover opacity-200"
+        />
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
 
-          <div class="relative z-10">
-            <a href="../index.html">
-              <img
-                src="../imgs/Robam_logo.png"
-                alt="logo"
-                class="w-14 h-14 object-contain"
-              />
-            </a>
-          </div>
-
-          <ul id="nav-menu" class="relative hidden md:flex items-center gap-3">
+      <div class="relative z-10">
+        <nav class="absolute top-0 left-0 w-full z-50 py-6">
+          <div class="max-w-6xl mx-auto px-4">
             <div
-              id="nav-indicator"
-              class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
-            ></div>
+              id="navbar"
+              class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+            >
+              <div
+                id="glow"
+                class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
+              ></div>
 
-            <li>
+              <div class="relative z-10">
+                <a href="../index.html">
+                  <img
+                    src="../imgs/Robam_logo.png"
+                    alt="logo"
+                    class="w-14 h-14 object-contain"
+                  />
+                </a>
+              </div>
+
+              <ul
+                id="nav-menu"
+                class="relative hidden md:flex items-center gap-3"
+              >
+                <div
+                  id="nav-indicator"
+                  class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
+                ></div>
+
+                <li>
+                  <a
+                    href="../index.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/history.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    History
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/contact.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/about.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                  >
+                    About
+                  </a>
+                </li>
+              </ul>
               <a
                 href="../index.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition"
               >
-                Home
+                SIGN IN
               </a>
-            </li>
+              <button class="relative z-10 md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7 h-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
 
-            <li>
-              <a
-                href="../pages/history.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                History
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="../pages/contact.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                Contact
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="../pages/about.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                About
-              </a>
-            </li>
-          </ul>
-          <a
-            href="#"
-            class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition"
-          >
-            SIGN IN
-          </a>
-          <button class="relative z-10 md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-7 h-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- main -->
-    <main>
-      <!-- section 1 -->
-      <section
-        class="relative min-h-screen flex items-center justify-center overflow-hidden"
-      >
-        <!-- Background Image -->
-        <img
-          src="imgs/about-hero.jpg"
-          alt=""
-          class="absolute inset-0 w-full h-full object-cover"
-        />
-
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/60"></div>
-
-        <!-- Content -->
         <div
-          class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white"
+          class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20 max-w-5xl mx-auto text-white"
         >
-          <span class="uppercase tracking-[0.3em] text-[#C89B3C] font-primary">
+          <span class="uppercase tracking-[0.3em] text-[#C89B3C]">
             អំពី Robam
           </span>
 
           <h1 class="mt-6 text-5xl md:text-7xl font-bold font-primary">
             អភិរក្សរបាំខ្មែរ
-            <span class="text-[#C89B3C]">សម្រាប់មនុស្សជំនាន់ក្រោយ</span>
+            <span class="text-[#C89B3C]"> សម្រាប់មនុស្សជំនាន់ក្រោយ </span>
           </h1>
 
-          <p
-            class="mt-8 max-w-3xl mx-auto text-lg md:text-xl text-white/80 font-primary"
-          >
+          <p class="mt-8 max-w-3xl text-lg md:text-xl text-white/80">
             ស្វែងយល់ពីប្រវត្តិសាស្ត្រ សោភ័ណភាព
             និងសារៈសំខាន់ផ្នែកវប្បធម៌នៃរបាំខ្មែរ
             ដែលជាបេតិកភណ្ឌរស់ដ៏មានតម្លៃរបស់កម្ពុជា
           </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- section 2 -->
+    <!-- main -->
+    <main>
+      <!-- section 1 -->
+
       <section class="py-24">
         <div class="max-w-7xl mx-auto px-4">
           <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -182,7 +181,7 @@
         </div>
       </section>
 
-      <!-- section 3 -->
+      <!-- section 2 -->
       <section class="py-24 bg-[#FAFAFA]">
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center mb-16">
@@ -226,52 +225,58 @@
         </div>
       </section>
 
-      <!-- section 4 -->
+      <!-- section 3 -->
       <section class="py-24">
         <div class="max-w-4xl mx-auto px-4">
           <div class="text-center mb-20">
-            <h2 class="text-4xl md:text-5xl font-bold">Journey Through Time</h2>
+            <h2 class="text-4xl md:text-5xl font-bold font-primary">
+              ដំណើរឆ្លងកាត់ពេលវេលា
+            </h2>
           </div>
 
           <div class="relative border-l-4 border-[#C89B3C] pl-10 space-y-16">
             <div>
-              <h3 class="text-2xl font-bold">Angkor Era</h3>
-              <p class="mt-3 text-gray-600">
-                Dance traditions flourished during the Khmer Empire.
+              <h3 class="text-2xl font-bold font-primary">សម័យអង្គរ</h3>
+              <p class="mt-3 text-gray-600 font-primary">
+                ប្រពៃណីរបាំបានរីកចម្រើនយ៉ាងខ្លាំងក្នុងសម័យចក្រភពខ្មែរ
               </p>
             </div>
 
             <div>
-              <h3 class="text-2xl font-bold">Royal Courts</h3>
-              <p class="mt-3 text-gray-600">
-                Robam became an important part of royal ceremonies.
+              <h3 class="text-2xl font-bold font-primary">រាជវាំង</h3>
+              <p class="mt-3 text-gray-600 font-primary">
+                របាំខ្មែរក្លាយជាផ្នែកសំខាន់មួយនៃព្រះរាជពិធី និងពិធីបុណ្យសំខាន់ៗ
               </p>
             </div>
 
             <div>
-              <h3 class="text-2xl font-bold">Modern Cambodia</h3>
-              <p class="mt-3 text-gray-600">
-                Efforts were made to preserve classical dance traditions.
+              <h3 class="text-2xl font-bold font-primary">កម្ពុជាសម័យទំនើប</h3>
+              <p class="mt-3 text-gray-600 font-primary">
+                មានកិច្ចខិតខំប្រឹងប្រែងជាច្រើនក្នុងការអភិរក្ស
+                និងស្តារឡើងវិញនូវប្រពៃណីរបាំបុរាណ
               </p>
             </div>
 
             <div>
-              <h3 class="text-2xl font-bold">Future Generations</h3>
-              <p class="mt-3 text-gray-600">
-                Continuing to inspire and educate young Cambodians.
+              <h3 class="text-2xl font-bold font-primary">មនុស្សជំនាន់ក្រោយ</h3>
+              <p class="mt-3 text-gray-600 font-primary">
+                បន្តជំរុញការសិក្សា ការយល់ដឹង
+                និងការស្រឡាញ់វប្បធម៌ខ្មែរក្នុងចំណោមយុវជន
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- section 5 -->
+      <!-- section 4 -->
       <section class="py-24">
         <div class="max-w-4xl mx-auto px-4 text-center">
           <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto"></div>
 
-          <h2 class="mt-10 text-3xl md:text-5xl font-primary leading-relaxed">
-            “To preserve dance is to preserve memory.”
+          <h2
+            class="mt-10 text-3xl md:text-5xl font-primary font-medium leading-relaxed"
+          >
+            “ការអភិរក្សរបាំគឺជាការអភិរក្សការចងចាំ និងព្រលឹងនៃជាតិខ្មែរ.”
           </h2>
 
           <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto mt-10"></div>

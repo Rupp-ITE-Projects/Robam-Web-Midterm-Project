@@ -108,8 +108,21 @@
 
     <!-- main -->
     <main>
-      <section class="py-24">
-        <div class="max-w-7xl mx-auto px-4 text-center">
+      <section class="relative py-24 overflow-hidden">
+        <!-- circle highlight-->
+        <div
+          class="absolute top-20 right-[18%] w-36 h-36 rounded-full bg-[#C89B3C]/20 blur-3xl"
+        ></div>
+
+        <div
+          class="absolute top-40 left-[15%] w-36 h-36 rounded-full bg-[#C89B3C]/25 blur-3xl"
+        ></div>
+
+        <div
+          class="absolute top-16 right-[22%] w-40 h-40 rounded-full bg-[#C89B3C]/10 blur-[90px]"
+        ></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <span class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium">
             Contact Us
           </span>
@@ -117,7 +130,7 @@
           <h1
             class="mt-4 text-5xl md:text-6xl lg:text-7xl font-bold font-primary"
           >
-            ទាក់ទងមកយើង
+            ទាក់ទងមកកាន់យើង
           </h1>
 
           <p
@@ -133,17 +146,14 @@
       <section class="py-20">
         <div class="max-w-7xl mx-auto px-4">
           <div class="relative overflow-hidden rounded-[40px] min-h-[500px]">
-            <!-- Background Image -->
             <img
               src="../imgs/dancer.jpg"
               alt="Khmer Dancer"
               class="absolute inset-0 w-full h-full object-cover"
             />
 
-            <!-- Overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
 
-            <!-- Content -->
             <div
               class="relative z-10 flex flex-col items-center justify-center text-center min-h-[500px] px-6"
             >
@@ -176,6 +186,7 @@
           </div>
         </div>
       </section>
+
       <!-- section 3 -->
       <section class="pb-24">
         <div class="max-w-4xl mx-auto px-4 text-center">
