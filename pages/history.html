@@ -10,6 +10,14 @@
       href="../imgs/Robam_logo.png"
       type="image/x-icon"
     />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- tailwind link -->
     <link rel="stylesheet" href="../src/output.css" />
     <!-- aos link -->
@@ -17,165 +25,405 @@
   </head>
   <body class="bg-[#F6F4F4] min-h-screen">
     <!-- navbar -->
-    <nav class="w-full py-6">
-      <div class="max-w-6xl mx-auto px-4">
-        <div
-          id="navbar"
-          class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
-        >
-          <div
-            id="glow"
-            class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
-          ></div>
+    <section class="relative bg-[#1B1B1B] pb-10">
+      <div class="absolute inset-0">
+        <img
+          src="../imgs/history_hero2.webp"
+          alt="hero section background"
+          class="w-full h-full object-cover opacity-200"
+        />
+        <div class="absolute inset-0 bg-black/30"></div>
+      </div>
 
-          <div class="relative z-10">
-            <a href="../index.html">
-              <img
-                src="../imgs/Robam_logo.png"
-                alt="logo"
-                class="w-14 h-14 object-contain"
-              />
-            </a>
-          </div>
-
-          <ul id="nav-menu" class="relative hidden md:flex items-center gap-3">
+      <div class="relative z-10">
+        <!-- Navbar -->
+        <nav class="w-full py-6">
+          <div class="max-w-6xl mx-auto px-4">
             <div
-              id="nav-indicator"
-              class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
-            ></div>
+              id="navbar"
+              class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+            >
+              <div
+                id="glow"
+                class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
+              ></div>
 
-            <li>
+              <div class="relative z-10">
+                <a href="../index.html">
+                  <img
+                    src="../imgs/Robam_logo.png"
+                    alt="logo"
+                    class="w-14 h-14 object-contain"
+                  />
+                </a>
+              </div>
+
+              <ul
+                id="nav-menu"
+                class="relative hidden md:flex items-center gap-3"
+              >
+                <div
+                  id="nav-indicator"
+                  class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
+                ></div>
+
+                <li>
+                  <a
+                    href="../index.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+                  >
+                    ទំព័រដើម
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/history.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+                  >
+                    ប្រវត្តិសាស្រ្ត
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/contact.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+                  >
+                    ទាក់ទង
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="../pages/about.html"
+                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+                  >
+                    អំពីពួកយើង
+                  </a>
+                </li>
+              </ul>
               <a
                 href="../index.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
+                class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition font-primary​"
               >
-                Home
+                ចុះឈ្មោះ
               </a>
-            </li>
+              <button class="relative z-10 md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7 h-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
 
-            <li>
-              <a
-                href="../pages/history.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                History
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="../pages/contact.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                Contact
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="../pages/about.html"
-                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium"
-              >
-                About
-              </a>
-            </li>
-          </ul>
-          <a
-            href="#"
-            class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition"
-          >
-            SIGN IN
-          </a>
-          <button class="relative z-10 md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-7 h-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+        <div
+          class="max-w-7xl mx-auto min-h-[500px] md:min-h-[650px] flex items-center justify-center lg:justify-end px-6 sm:px-10 lg:px-20"
+        >
+          <div class="max-w-xl text-center lg:text-left">
+            <h1
+              class="font-primary text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+              ស្វាគមន៍មកកាន់ពិភពនៃសិល្បៈរបាំ និងវប្បធម៌ខ្មែរ.<br />
+            </h1>
+
+            <div class="flex justify-center mt-10">
+              <a
+                href="pages/history.html"
+                class="inline-block px-8 py-4 border border-white/70 rounded-2xl text-white font-semibold hover:bg-white/20 hover:text-white transition"
+              >
+                Explore
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+
+    <!-- main -->
+    <main>
+      <!-- section 2 -->
+
+      <section class="py-24 bg-white">
+        <section class="text-center">
+          <div class="mb-20">
+            <h2
+              class="mt-3 text-4xl md:text-5xl lg:text-7xl font-bold font-primary"
+            >
+              ការវិវត្តនៃរបាំខ្មែរ
+              <span class="text-[#C89B3C]">ពីមួយជំនាន់ទៅមួយជំនាន់.</span>
+            </h2>
+
+            <p
+              class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed font-primary"
+            >
+              អស់រយៈពេលជាងមួយពាន់ឆ្នាំមកហើយ សិល្បៈរបាំនេះបានរក្សានូវអត្តសញ្ញាណ
+              និងសោភ័ណភាពរបស់ខ្លួន ទោះបីជាសង្គម
+              និងសម័យកាលមានការផ្លាស់ប្តូរក៏ដោយ។
+            </p>
+          </div>
+        </section>
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="group">
+              <img
+                src="../imgs/angkor apsara.jpg"
+                class="h-[300px] w-full object-cover rounded-[30px]"
+              />
+
+              <h3 class="mt-6 text-3xl font-bold font-primary">សម័យអង្គរ</h3>
+
+              <ul class="mt-4 space-y-2 text-gray-600 font-primary">
+                <li>ចម្លាក់នៅលើប្រាសាទ</li>
+                <li>ប្រភពដើមនៃរបាំអប្សរា</li>
+                <li>ពិធីបុណ្យ និងពិធីសាសនាដ៏សក្ការៈ</li>
+              </ul>
+            </div>
+
+            <div class="group">
+              <img
+                src="../imgs/royal_apsara.png"
+                class="h-[300px] w-full object-cover rounded-[30px]"
+              />
+
+              <h3 class="mt-6 text-3xl font-bold font-primary">
+                សម័យព្រះរាជវាំង
+              </h3>
+
+              <ul class="mt-4 space-y-2 text-gray-600 font-primary">
+                <li>ការសម្តែងក្នុងព្រះបរមរាជវាំង</li>
+                <li>ប្រពៃណីរាជសំណាក់</li>
+                <li>ការអភិរក្សវប្បធម៌</li>
+              </ul>
+            </div>
+
+            <div class="group">
+              <img
+                src="../imgs/modern.webp"
+                class="h-[300px] w-full object-cover rounded-[30px]"
+              />
+
+              <h3 class="mt-6 text-3xl font-bold font-primary">សម័យទំនើប</h3>
+
+              <ul class="mt-4 space-y-2 text-gray-600 font-primary">
+                <li>បេតិកភណ្ឌយូណេស្កូ (UNESCO)</li>
+                <li>សាលាបង្រៀនរបាំ</li>
+                <li>ការទទួលស្គាល់ជាសកល</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 -->
+      <section class="py-24 bg-[#F8F7F2]">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="text-center lg:text-left">
+              <span
+                class="uppercase tracking-[0.3em] text-[#C89B3C] font-primary"
+              >
+                កេរ្តិ៍ដំណែល
+              </span>
+
+              <h2 class="mt-4 text-5xl font-bold font-primary">
+                កេរ្តិ៍ដំណែលនៃរបាំខ្មែរ
+              </h2>
+
+              <p
+                class="mt-6 lg:text-2xl text-gray-600 leading-relaxed font-primary"
+              >
+                របាំខ្មែរត្រូវបានអភិរក្ស និងបន្តរក្សាទុកអស់រយៈពេលជាច្រើនសតវត្សរ៍
+                តាមរយៈព្រះរាជសំណាក់ ប្រាសាទ
+                និងគ្រូបុរាណដែលបានលះបង់កម្លាំងកាយចិត្តក្នុងការបន្តផ្ទេរចំណេះដឹង
+                និងជំនាញរបាំទៅកាន់មនុស្សជំនាន់ក្រោយ.
+              </p>
+
+              <button
+                class="mt-8 px-8 py-2 rounded-full border border-black​ font-primary cursor-pointer text-black hover:text-[#3c2b11]"
+              >
+                <a href="../pages/history.html"> អានបន្ថែម </a>
+              </button>
+            </div>
+
+            <img
+              src="../imgs/old_dancer.jpg"
+              class="rounded-[30px] w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- section 4 -->
+      <!-- <section id="timeline" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center mb-16">
+            <h2 class="text-5xl font-bold">Historical Timeline</h2>
+
+            <span class="text-[#C89B3C]"> Khmer Heritage Journey </span>
+          </div>
+
+          <div class="columns-1 md:columns-2 lg:columns-4 gap-6">
+            <div class="mb-6 break-inside-avoid">
+              <img src="../imgs/angkor.jpg" class="rounded-[20px]" />
+              <h3 class="mt-4 font-bold text-xl">800 AD</h3>
+              <p class="text-gray-600">Angkor Origins</p>
+            </div>
+
+            <div class="mb-6 break-inside-avoid">
+              <img src="../imgs/royal.jpg" class="rounded-[20px]" />
+              <h3 class="mt-4 font-bold text-xl">1400 AD</h3>
+              <p class="text-gray-600">Royal Court Dance</p>
+            </div>
+
+            <div class="mb-6 break-inside-avoid">
+              <img src="../imgs/revival.jpg" class="rounded-[20px]" />
+              <h3 class="mt-4 font-bold text-xl">1979</h3>
+              <p class="text-gray-600">Cultural Revival</p>
+            </div>
+
+            <div class="mb-6 break-inside-avoid">
+              <img src="../imgs/unesco.jpg" class="rounded-[20px]" />
+              <h3 class="mt-4 font-bold text-xl">2003</h3>
+              <p class="text-gray-600">UNESCO Recognition</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- section 5 -->
+      <!-- <section class="relative py-40 overflow-hidden">
+        <img
+          src="../imgs/apsara-wall.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div
+          class="relative z-10 max-w-5xl mx-auto px-4 text-center text-white"
+        >
+          <h2 class="text-4xl md:text-6xl font-bold font-primary leading-tight">
+            "Every movement carries the memory of Khmer civilization."
+          </h2>
+        </div>
+      </section> -->
+
+      <!-- section 6 -->
+      <!-- <section class="py-32 bg-[#F8F7F2]">
+        <div class="max-w-4xl mx-auto text-center px-4">
+          <h2 class="text-5xl md:text-6xl font-bold font-primary">
+            Discover Khmer Dance Types
+          </h2>
+
+          <p class="mt-6 text-gray-600 text-lg">
+            Continue exploring the beauty and diversity of Cambodia's
+            traditional dance heritage.
+          </p>
+
+          <a
+            href="types.html"
+            class="inline-block mt-10 px-10 py-4 bg-[#C89B3C] text-white rounded-full"
+          >
+            Explore Robam
+          </a>
+        </div>
+      </section> -->
+    </main>
 
     <!-- footer -->
-    <footer class="bg-[#765420] border-t border-black/10 text-white">
-      <div class="max-w-7xl mx-auto px-6 py-20">
-        <div class="grid md:grid-cols-3 gap-12">
-          <div>
-            <img
-              src="../imgs/Robam_logo.png"
-              alt="Robam Khmer Logo"
-              class="w-20 mb-6"
-            />
+    <footer class="bg-white mt-10 py-10">
+      <div
+        class="container mx-auto px-4 pl-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left text-sm sm:text-base"
+      >
+        <div class="flex justify-center md:justify-start gap-4">
+          <img
+            src="../imgs/Robam_logo.png"
+            alt="Logo 1"
+            class="w-32 h-32 object-contain"
+          />
+        </div>
 
-            <h3 class="text-3xl font-bold text-white font-primary">Robam</h3>
+        <div
+          class="flex flex-col max-lg:mt-3 items-center md:items-start gap-5"
+        >
+          <h4 class="font-primary font-semibold text-lg">បណ្តាញសង្គម</h4>
+          <div class="flex gap-4">
+            <!-- Facebook -->
+            <a href="">
+              <button
+                class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
+              >
+                <i class="fa-brands fa-facebook-f text-3xl text-[#765420]"></i>
+              </button>
+            </a>
 
-            <p class="mt-4 leading-relaxed font-primary">
-              «របាំខ្មែរ ព្រលឹងនៃវប្បធម៌ជាតិ»
-            </p>
-          </div>
+            <!-- TikTok -->
+            <a href="">
+              <button
+                class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
+              >
+                <i class="fa-brands fa-tiktok text-3xl text-[#765420]"></i>
+              </button>
+            </a>
 
-          <!-- Navigation -->
-          <div>
-            <h4 class="font-semibold text-lg mb-5">Explore</h4>
-
-            <ul class="space-y-3">
-              <li>
-                <a href="../index.html" class="hover:text-[#C89B3C] transition">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="../pages/history.html"
-                  class="hover:text-[#C89B3C] transition"
-                >
-                  History
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="../pages/contact.html"
-                  class="hover:text-[#C89B3C] transition"
-                >
-                  Contact
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="../pages/about.html"
-                  class="hover:text-[#C89B3C] transition"
-                >
-                  About
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="font-semibold text-lg mb-5 font-primary">មរតកវប្បធម៌</h4>
-
-            <p class="italic leading-relaxed font-primary">
-              “រាល់ក្បាច់របាំ និទានរឿងនៃអរិយធម៌ខ្មែរ រាល់ចលនា
-              រក្សាទុកព្រលឹងនៃវប្បធម៌ជាតិ”
-            </p>
+            <!-- YouTube -->
+            <a href="">
+              <button
+                class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
+              >
+                <i class="fa-brands fa-youtube text-3xl text-[#765420]"></i>
+              </button>
+            </a>
           </div>
         </div>
 
-        <div class="border-t border-black/10 mt-12 pt-8 text-center">
-          © 2026 All Right Reserved Robam
+        <div class="flex flex-col gap-5 items-center md:items-start">
+          <h4 class="font-primary font-semibold text-lg">តំណភ្ជាប់រហ័ស</h4>
+          <a
+            href="../index.html"
+            class="font-primary hover:text-yellow-600 transition"
+            >ទំព័រដើម</a
+          >
+          <a
+            href="../pages/history.html"
+            class="font-primary hover:text-yellow-600 transition"
+            >ប្រវត្តិសាស្រ្ត</a
+          >
+
+          <a
+            href="../pages/about.html"
+            class="font-primary hover:text-yellow-600 transition"
+            >អំពីពួកយើង</a
+          >
+          <a
+            href="../pages/contact.html"
+            class="font-primary hover:text-yellow-600 transition"
+            >ទាក់ទង</a
+          >
+        </div>
+
+        <div class="flex flex-col gap-5 items-center md:items-start">
+          <h4 class="font-primary font-semibold text-lg max-sm:text-center">
+            ឧបត្ថម្ភដោយ
+          </h4>
+          <img
+            src="../imgs/Rupp_logo.png"
+            alt="Logo 2"
+            class="w-27 h-27 object-contain mt-3"
+          />
         </div>
       </div>
     </footer>
