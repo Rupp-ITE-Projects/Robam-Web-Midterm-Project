@@ -26,96 +26,139 @@
   <body class="bg-[#F6F4F4] min-h-screen">
     <!-- navbar -->
     <nav class="w-full py-6">
-          <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          id="navbar"
+          class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+          data-aos="fade-down"
+        >
+          <div
+            id="glow"
+            class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
+          ></div>
+
+          <div class="relative z-10">
+            <a href="../index.html">
+              <img
+                src="../imgs/Robam_logo.png"
+                alt="logo"
+                class="w-14 h-14 object-contain"
+              />
+            </a>
+          </div>
+
+          <ul id="nav-menu" class="relative hidden md:flex items-center gap-3">
             <div
-              id="navbar"
-              class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
-            >
-              <div
-                id="glow"
-                class="absolute w-52 h-52 rounded-full pointer-events-none opacity-0 transition-opacity duration-300 blur-3xl bg-[#C89B3C]/20"
-              ></div>
+              id="nav-indicator"
+              class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
+            ></div>
 
-              <div class="relative z-10">
-                <a href="../index.html">
-                  <img
-                    src="../imgs/Robam_logo.png"
-                    alt="logo"
-                    class="w-14 h-14 object-contain"
-                  />
-                </a>
-              </div>
-
-              <ul
-                id="nav-menu"
-                class="relative hidden md:flex items-center gap-3"
-              >
-                <div
-                  id="nav-indicator"
-                  class="absolute h-8 rounded-full bg-[#F6F4F4] transition-all duration-300 ease-out"
-                ></div>
-
-                <li>
-                  <a
-                    href="../index.html"
-                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
-                  >
-                    ទំព័រដើម
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="../pages/history.html"
-                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
-                  >
-                    ប្រវត្តិសាស្រ្ត
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="../pages/contact.html"
-                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
-                  >
-                    ទាក់ទង
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="../pages/about.html"
-                    class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
-                  >
-                    អំពីពួកយើង
-                  </a>
-                </li>
-              </ul>
+            <li>
               <a
                 href="../index.html"
-                class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition font-primary​"
+                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
               >
-                ចុះឈ្មោះ
+                ទំព័រដើម
               </a>
-              <button class="relative z-10 md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 h-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </nav>
+            </li>
+
+            <li>
+              <a
+                href="../pages/history.html"
+                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+              >
+                ប្រវត្តិសាស្រ្ត
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../pages/contact.html"
+                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+              >
+                ទាក់ទង
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="../pages/about.html"
+                class="nav-link relative z-10 px-6 py-3 rounded-full font-medium font-primary"
+              >
+                អំពីពួកយើង
+              </a>
+            </li>
+          </ul>
+          <a
+            href="../index.html"
+            class="relative z-10 hidden md:flex items-center justify-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium hover:bg-[#B68A35] transition font-primary​"
+          >
+            ចុះឈ្មោះ
+          </a>
+          <button
+            id="hamburger-btn"
+            class="relative z-10 md:hidden flex flex-col gap-[5px] p-1"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span
+              class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+            ></span>
+            <span
+              class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"
+            ></span>
+            <span
+              class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile dropdown -->
+    <div
+      id="mobile-menu"
+      class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mx-4"
+    >
+      <div class="bg-white rounded-2xl mt-0 mb-3 overflow-hidden">
+        <ul class="flex flex-col">
+          <li>
+            <a
+              href="../index.html"
+              class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+              >ទំព័រដើម <span class="text-[#C89B3C]">›</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/history.html"
+              class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+              >ប្រវត្តិសាស្រ្ត <span class="text-[#C89B3C]">›</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/contact.html"
+              class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+              >ទាក់ទង <span class="text-[#C89B3C]">›</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/about.html"
+              class="flex justify-between items-center px-6 py-4 font-primary hover:bg-gray-50"
+              >អំពីពួកយើង <span class="text-[#C89B3C]">›</span></a
+            >
+          </li>
+        </ul>
+        <div class="p-3">
+          <a
+            href="../index.html"
+            class="block text-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium font-primary"
+            >ចុះឈ្មោះ</a
+          >
+        </div>
+      </div>
+    </div>
 
     <!-- main -->
     <main>
@@ -134,18 +177,25 @@
         ></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <span class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium">
+          <span
+            class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium"
+            data-aos="fade-up"
+          >
             Contact Us
           </span>
 
           <h1
             class="mt-4 text-5xl md:text-6xl lg:text-7xl font-bold font-primary"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             ទាក់ទងមកកាន់យើង
           </h1>
 
           <p
             class="max-w-3xl mx-auto mt-6 text-lg text-gray-600 leading-relaxed font-primary"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             ប្រសិនបើអ្នកមានសំណួរ យោបល់ ឬចង់ស្វែងយល់បន្ថែមអំពីរបាំខ្មែរ
             យើងរីករាយក្នុងការស្តាប់ពីអ្នក។
@@ -156,7 +206,10 @@
       <!-- section 2 -->
       <section class="py-20">
         <div class="max-w-7xl mx-auto px-4">
-          <div class="relative overflow-hidden rounded-[40px] min-h-[500px]">
+          <div
+            class="relative overflow-hidden rounded-[40px] min-h-[500px]"
+            data-aos="fade-up"
+          >
             <img
               src="../imgs/dancer.jpg"
               alt="Khmer Dancer"
@@ -201,15 +254,23 @@
       <!-- section 3 -->
       <section class="pb-24">
         <div class="max-w-4xl mx-auto px-4 text-center">
-          <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto"></div>
+          <div
+            class="w-24 h-[2px] bg-[#C89B3C] mx-auto"
+            data-aos="fade-in"
+          ></div>
 
           <h2
             class="text-3xl md:text-5xl font-primary font-medium mt-8 leading-relaxed"
+            data-aos="fade-up"
           >
             “សិល្បៈនៅមានជីវិត ដោយសារអ្នកស្រឡាញ់ <br />និងថែរក្សាវា”
           </h2>
 
-          <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto mt-8"></div>
+          <div
+            class="w-24 h-[2px] bg-[#C89B3C] mx-auto mt-8"
+            data-aos="fade-in"
+            data-aos-delay="200"
+          ></div>
         </div>
       </section>
       <!-- section 4 -->
@@ -218,6 +279,7 @@
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div
               class="bg-white rounded-[20px] overflow-hidden border border-gray-100"
+              data-aos="fade-right"
             >
               <img
                 src="../imgs/the-national-museum-3.jpg"
@@ -226,24 +288,26 @@
               />
 
               <div class="p-8">
-                <span class="text-[#C89B3C] uppercase tracking-wider text-sm">
-                  Cultural Heritage
+                <span
+                  class="text-[#C89B3C] uppercase tracking-wider text-sm font-primary"
+                >
+                  បេតិកភណ្ឌវប្បធម៌
                 </span>
 
                 <h3 class="mt-3 text-3xl font-bold font-primary">
-                  National Museum of Cambodia
+                  សារមន្ទីរជាតិកម្ពុជា
                 </h3>
 
-                <p class="mt-4 text-gray-600 leading-relaxed">
-                  Discover Cambodia's artistic heritage and learn more about the
-                  history and traditions behind Khmer classical dance.
+                <p class="mt-4 text-gray-600 leading-relaxed font-primary">
+                  ស្វែងយល់អំពីបេតិកភណ្ឌសិល្បៈរបស់កម្ពុជា និងប្រវត្តិសាស្ត្រ
+                  ព្រមទាំងប្រពៃណីដែលនៅពីក្រោយរបាំបុរាណខ្មែរ។
                 </p>
 
                 <a
                   href="#"
-                  class="inline-flex items-center gap-2 mt-6 text-[#C89B3C] font-semibold"
+                  class="inline-flex items-center gap-2 mt-6 text-[#C89B3C] font-semibold font-primary"
                 >
-                  Explore More →
+                  ស្វែងយល់បន្ថែម →
                 </a>
               </div>
             </div>
@@ -251,32 +315,33 @@
             <!-- Form -->
             <div
               class="bg-white rounded-[30px] p-8 md:p-12 shadow-sm border border-gray-100"
+              data-aos="fade-left"
             >
-              <h2 class="text-4xl font-bold font-primary">Send a Message</h2>
+              <h2 class="text-4xl font-bold font-primary">ផ្ញើសារ</h2>
 
               <form class="mt-8 space-y-6">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="ឈ្មោះរបស់អ្នក"
                   class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#C89B3C]"
                 />
 
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="អ៊ីមែលរបស់អ្នក"
                   class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#C89B3C]"
                 />
 
                 <textarea
                   rows="6"
-                  placeholder="Your Message"
+                  placeholder="សាររបស់អ្នក"
                   class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#C89B3C]"
                 ></textarea>
 
                 <button
-                  class="px-8 py-4 bg-[#C89B3C] text-white rounded-full hover:bg-[#B68A35] transition"
+                  class="px-8 py-2 bg-[#C89B3C] text-white rounded-full hover:bg-[#B68A35] transition"
                 >
-                  Send Message
+                  ផ្ញើសារ
                 </button>
               </form>
             </div>
@@ -296,24 +361,19 @@
             alt="Logo 1"
             class="w-32 h-32 object-contain"
           />
-          
         </div>
 
         <div
           class="flex flex-col max-lg:mt-3 items-center md:items-start gap-5"
         >
-          <h4 class="font-primary font-semibold text-lg">
-            បណ្តាញសង្គម
-          </h4>
-          <div class="flex gap-4 ">
+          <h4 class="font-primary font-semibold text-lg">បណ្តាញសង្គម</h4>
+          <div class="flex gap-4">
             <!-- Facebook -->
             <a href="">
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-facebook-f text-3xl  text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-facebook-f text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -322,9 +382,7 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-tiktok text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-tiktok text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -333,21 +391,17 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-youtube text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-youtube text-3xl text-[#765420]"></i>
               </button>
             </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          <h4 class="font-primary font-semibold text-lg">
-            តំណភ្ជាប់រហ័ស
-          </h4>
+          <h4 class="font-primary font-semibold text-lg">តំណភ្ជាប់រហ័ស</h4>
           <a
             href="../index.html"
-            class=" font-primary hover:text-yellow-600 transition"
+            class="font-primary hover:text-yellow-600 transition"
             >ទំព័រដើម</a
           >
           <a
@@ -355,7 +409,7 @@
             class="font-primary hover:text-yellow-600 transition"
             >ប្រវត្តិសាស្រ្ត</a
           >
-          
+
           <a
             href="../pages/about.html"
             class="font-primary hover:text-yellow-600 transition"
@@ -369,18 +423,14 @@
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          
-          <h4
-            class="font-primary font-semibold text-lg max-sm:text-center"
-          >
+          <h4 class="font-primary font-semibold text-lg max-sm:text-center">
             ឧបត្ថម្ភដោយ
           </h4>
-           <img
+          <img
             src="../imgs/Rupp_logo.png"
             alt="Logo 2"
             class="w-27 h-27 object-contain mt-3"
           />
-          
         </div>
       </div>
     </footer>
@@ -394,4 +444,5 @@
     });
   </script>
   <script src="../js/hover.js"></script>
+  <script src="../js/button.js"></script>
 </html>

@@ -30,7 +30,7 @@
         <img
           src="../imgs/dancer 2.jpg"
           alt="hero section background"
-          class="w-full h-full object-cover opacity-200"
+          class="w-full h-full object-cover"
         />
         <div class="absolute inset-0 bg-black/50"></div>
       </div>
@@ -41,6 +41,7 @@
             <div
               id="navbar"
               class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+              data-aos="fade-down"
             >
               <div
                 id="glow"
@@ -108,39 +109,95 @@
               >
                 ចុះឈ្មោះ
               </a>
-              <button class="relative z-10 md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 h-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+              <button
+                id="hamburger-btn"
+                class="relative z-10 md:hidden flex flex-col gap-[5px] p-1"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+              >
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+                ></span>
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"
+                ></span>
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+                ></span>
               </button>
             </div>
           </div>
         </nav>
+        <!-- Mobile dropdown -->
+        <div
+          id="mobile-menu"
+          class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mx-4"
+        >
+          <div class="bg-white rounded-2xl mt-0 mb-3 overflow-hidden">
+            <ul class="flex flex-col">
+              <li>
+                <a
+                  href="../index.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ទំព័រដើម <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/history.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ប្រវត្តិសាស្រ្ត <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/contact.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ទាក់ទង <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/about.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary hover:bg-gray-50"
+                  >អំពីពួកយើង <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+            </ul>
+            <div class="p-3">
+              <a
+                href="../index.html"
+                class="block text-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium font-primary"
+                >ចុះឈ្មោះ</a
+              >
+            </div>
+          </div>
+        </div>
 
         <div
           class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20 max-w-5xl mx-auto text-white"
         >
-          <span class="uppercase tracking-[0.3em] text-[#C89B3C]">
+          <span
+            class="uppercase tracking-[0.3em] text-[#C89B3C]"
+            data-aos="fade-up"
+          >
             អំពី Robam
           </span>
 
-          <h1 class="mt-6 text-5xl md:text-7xl font-bold font-primary">
+          <h1
+            class="mt-6 text-5xl md:text-7xl font-bold font-primary"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             អភិរក្សរបាំខ្មែរ
             <span class="text-[#C89B3C]"> សម្រាប់មនុស្សជំនាន់ក្រោយ </span>
           </h1>
 
-          <p class="mt-8 max-w-3xl text-lg md:text-xl text-white/80">
+          <p
+            class="mt-8 max-w-3xl text-lg md:text-xl text-white/80"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             ស្វែងយល់ពីប្រវត្តិសាស្ត្រ សោភ័ណភាព
             និងសារៈសំខាន់ផ្នែកវប្បធម៌នៃរបាំខ្មែរ
             ដែលជាបេតិកភណ្ឌរស់ដ៏មានតម្លៃរបស់កម្ពុជា
@@ -156,15 +213,15 @@
       <section class="py-24">
         <div class="max-w-7xl mx-auto px-4">
           <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div data-aos="fade-right">
               <img
                 src="../imgs/the-perfect-motion.jpg"
                 alt=""
-                class="w-full object-cover"
+                class="w-full object-cover rounded-[30px]"
               />
             </div>
 
-            <div>
+            <div data-aos="fade-left">
               <span
                 class="text-[#C89B3C] uppercase tracking-[0.2em] font-primary"
               >
@@ -192,28 +249,40 @@
       <!-- section 2 -->
       <section class="py-24 bg-[#FAFAFA]">
         <div class="max-w-7xl mx-auto px-4">
-          <div class="text-center mb-16">
+          <div class="text-center mb-16" data-aos="fade-up">
             <h2 class="text-4xl md:text-5xl font-bold font-primary">
               ហេតុអ្វីបានជារបាំមានសារៈសំខាន់?
             </h2>
           </div>
 
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white p-8 rounded-[30px]">
+            <div
+              class="bg-white p-8 rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
               <h3 class="text-2xl font-bold mb-4 font-primary">បេតិកភណ្ឌ</h3>
               <p class="text-gray-600 font-primary">
                 ជាស្ពានភ្ជាប់ដ៏រស់រវើកទៅកាន់អរិយធម៌ខ្មែរបុរាណ។
               </p>
             </div>
 
-            <div class="bg-white p-8 rounded-[30px]">
+            <div
+              class="bg-white p-8 rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <h3 class="text-2xl font-bold mb-4 font-primary">អត្តសញ្ញាណ</h3>
               <p class="text-gray-600 font-primary">
                 ជាការបង្ហាញពីវប្បធម៌ខ្មែរ និងមោទនភាពជាតិ។
               </p>
             </div>
 
-            <div class="bg-white p-8 rounded-[30px]">
+            <div
+              class="bg-white p-8 rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h3 class="text-2xl font-bold mb-4 font-primary">
                 ប្រវត្តិសាស្ត្រ
               </h3>
@@ -222,7 +291,11 @@
               </p>
             </div>
 
-            <div class="bg-white p-8 rounded-[30px]">
+            <div
+              class="bg-white p-8 rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <h3 class="text-2xl font-bold mb-4 font-primary">សិល្បៈ</h3>
               <p class="text-gray-600 font-primary">
                 ជាការរួមបញ្ចូលដ៏វិចិត្ររវាងចលនា តន្ត្រី
@@ -236,28 +309,28 @@
       <!-- section 3 -->
       <section class="py-24">
         <div class="max-w-4xl mx-auto px-4">
-          <div class="text-center mb-20">
+          <div class="text-center mb-20" data-aos="fade-up">
             <h2 class="text-4xl md:text-5xl font-bold font-primary">
               ដំណើរឆ្លងកាត់ពេលវេលា
             </h2>
           </div>
 
           <div class="relative border-l-4 border-[#C89B3C] pl-10 space-y-16">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="0">
               <h3 class="text-2xl font-bold font-primary">សម័យអង្គរ</h3>
               <p class="mt-3 text-gray-600 font-primary">
                 ប្រពៃណីរបាំបានរីកចម្រើនយ៉ាងខ្លាំងក្នុងសម័យចក្រភពខ្មែរ
               </p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-2xl font-bold font-primary">រាជវាំង</h3>
               <p class="mt-3 text-gray-600 font-primary">
                 របាំខ្មែរក្លាយជាផ្នែកសំខាន់មួយនៃព្រះរាជពិធី និងពិធីបុណ្យសំខាន់ៗ
               </p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
               <h3 class="text-2xl font-bold font-primary">កម្ពុជាសម័យទំនើប</h3>
               <p class="mt-3 text-gray-600 font-primary">
                 មានកិច្ចខិតខំប្រឹងប្រែងជាច្រើនក្នុងការអភិរក្ស
@@ -265,7 +338,7 @@
               </p>
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
               <h3 class="text-2xl font-bold font-primary">មនុស្សជំនាន់ក្រោយ</h3>
               <p class="mt-3 text-gray-600 font-primary">
                 បន្តជំរុញការសិក្សា ការយល់ដឹង
@@ -279,15 +352,23 @@
       <!-- section 4 -->
       <section class="py-24">
         <div class="max-w-4xl mx-auto px-4 text-center">
-          <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto"></div>
+          <div
+            class="w-24 h-[2px] bg-[#C89B3C] mx-auto"
+            data-aos="fade-in"
+          ></div>
 
           <h2
             class="mt-10 text-3xl md:text-5xl font-primary font-medium leading-relaxed"
+            data-aos="fade-up"
           >
             “ការអភិរក្សរបាំគឺជាការអភិរក្សការចងចាំ និងព្រលឹងនៃជាតិខ្មែរ.”
           </h2>
 
-          <div class="w-24 h-[2px] bg-[#C89B3C] mx-auto mt-10"></div>
+          <div
+            class="w-24 h-[2px] bg-[#C89B3C] mx-auto mt-10"
+            data-aos="fade-in"
+            data-aos-delay="200"
+          ></div>
         </div>
       </section>
     </main>
@@ -303,24 +384,19 @@
             alt="Logo 1"
             class="w-32 h-32 object-contain"
           />
-          
         </div>
 
         <div
           class="flex flex-col max-lg:mt-3 items-center md:items-start gap-5"
         >
-          <h4 class="font-primary font-semibold text-lg">
-            បណ្តាញសង្គម
-          </h4>
-          <div class="flex gap-4 ">
+          <h4 class="font-primary font-semibold text-lg">បណ្តាញសង្គម</h4>
+          <div class="flex gap-4">
             <!-- Facebook -->
             <a href="">
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-facebook-f text-3xl  text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-facebook-f text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -329,9 +405,7 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-tiktok text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-tiktok text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -340,21 +414,17 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-youtube text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-youtube text-3xl text-[#765420]"></i>
               </button>
             </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          <h4 class="font-primary font-semibold text-lg">
-            តំណភ្ជាប់រហ័ស
-          </h4>
+          <h4 class="font-primary font-semibold text-lg">តំណភ្ជាប់រហ័ស</h4>
           <a
             href="../index.html"
-            class=" font-primary hover:text-yellow-600 transition"
+            class="font-primary hover:text-yellow-600 transition"
             >ទំព័រដើម</a
           >
           <a
@@ -362,7 +432,7 @@
             class="font-primary hover:text-yellow-600 transition"
             >ប្រវត្តិសាស្រ្ត</a
           >
-          
+
           <a
             href="../pages/about.html"
             class="font-primary hover:text-yellow-600 transition"
@@ -376,18 +446,14 @@
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          
-          <h4
-            class="font-primary font-semibold text-lg max-sm:text-center"
-          >
+          <h4 class="font-primary font-semibold text-lg max-sm:text-center">
             ឧបត្ថម្ភដោយ
           </h4>
-           <img
+          <img
             src="../imgs/Rupp_logo.png"
             alt="Logo 2"
             class="w-27 h-27 object-contain mt-3"
           />
-          
         </div>
       </div>
     </footer>
@@ -401,4 +467,5 @@
     });
   </script>
   <script src="../js/hover.js"></script>
+  <script src="../js/button.js"></script>
 </html>

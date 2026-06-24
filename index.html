@@ -25,14 +25,15 @@
   </head>
   <body class="bg-[#F6F4F4] min-h-screen">
     <!-- navbar -->
-    <section class="relative bg-[#1B1B1B] pb-10 ">
+    <section class="relative bg-[#1B1B1B] pb-10 min-h-screen">
+      >
       <div class="absolute inset-0">
         <img
           src="imgs/hero 1.png"
           alt="hero section background"
-          class="w-full h-full object-cover opacity-200"
+          class="w-full h-full object-cover"
         />
-        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div class="relative z-10">
@@ -42,6 +43,7 @@
             <div
               id="navbar"
               class="relative overflow-hidden bg-white rounded-full h-24 px-8 flex items-center justify-between"
+              data-aos="fade-down"
             >
               <div
                 id="glow"
@@ -109,25 +111,71 @@
               >
                 ចុះឈ្មោះ
               </a>
-              <button class="relative z-10 md:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 h-7"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+              <button
+                id="hamburger-btn"
+                class="relative z-10 md:hidden flex flex-col gap-[5px] p-1"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+              >
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+                ></span>
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300"
+                ></span>
+                <span
+                  class="bar block w-6 h-0.5 bg-gray-800 rounded transition-all duration-300 origin-center"
+                ></span>
               </button>
             </div>
           </div>
         </nav>
+
+        <!-- Mobile dropdown -->
+        <div
+          id="mobile-menu"
+          class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mx-4"
+        >
+          <div class="bg-white rounded-2xl mt-0 mb-3 overflow-hidden">
+            <ul class="flex flex-col">
+              <li>
+                <a
+                  href="index.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ទំព័រដើម <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/history.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ប្រវត្តិសាស្រ្ត <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/contact.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary border-b border-gray-100 hover:bg-gray-50"
+                  >ទាក់ទង <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="pages/about.html"
+                  class="flex justify-between items-center px-6 py-4 font-primary hover:bg-gray-50"
+                  >អំពីពួកយើង <span class="text-[#C89B3C]">›</span></a
+                >
+              </li>
+            </ul>
+            <div class="p-3">
+              <a
+                href="index.html"
+                class="block text-center px-7 py-3 rounded-full bg-[#C89B3C] text-white font-medium font-primary"
+                >ចុះឈ្មោះ</a
+              >
+            </div>
+          </div>
+        </div>
 
         <div
           class="max-w-7xl mx-auto min-h-[500px] md:min-h-[650px] flex items-center justify-center lg:justify-end px-6 sm:px-10 lg:px-20"
@@ -135,11 +183,16 @@
           <div class="max-w-xl text-center lg:text-left">
             <h1
               class="font-primary text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
+              data-aos="fade-up"
             >
               ស្វាគមន៍មកកាន់ពិភពនៃសិល្បៈរបាំ និងវប្បធម៌ខ្មែរ.<br />
             </h1>
 
-            <div class="flex justify-center mt-10">
+            <div
+              class="flex justify-center mt-10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <a
                 href="pages/history.html"
                 class="inline-block px-8 py-4 border border-white/70 rounded-2xl text-white font-semibold hover:bg-white/20 hover:text-white transition"
@@ -157,12 +210,17 @@
       <section class="w-full px-4 sm:py-20 lg:py-15">
         <!-- Heading -->
         <div class="text-center">
-          <span class="font-primary uppercase text-sm tracking-wider">
+          <span
+            class="font-primary uppercase text-sm tracking-wider"
+            data-aos="fade-up"
+          >
             របាំបុរាណខ្មែរ
           </span>
 
           <h2
             class="mt-4 text-4xl md:text-5xl lg:text-7xl font-bold font-primary"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             មរតកនៃចលនា
             <span class="text-[#C89B3C]">ភាសានៃព្រលឹងជាតិ.</span>
@@ -170,6 +228,8 @@
 
           <p
             class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed font-primary"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             រាល់ក្បាច់ដៃ និងចលនានីមួយៗ ផ្ទុកនូវអត្ថន័យជ្រាលជ្រៅ បង្ហាញពីវប្បធម៌
             ជំនឿ និងរឿងរ៉ាវដែលបានរស់រានមានជីវិត តាំងពីបុរាណកាលមក។
@@ -184,6 +244,8 @@
           <!-- Card 1 -->
           <div
             class="absolute top-0 -translate-x-1/2 z-10 left-[14%] w-[clamp(68px,19vw,96px)] -rotate-[16deg] translate-y-[38%] sm:left-[11%] sm:w-[clamp(86px,19vw,130px)] sm:-rotate-[20deg] sm:translate-y-[42%] lg:left-[8%] lg:w-[clamp(110px,15vw,190px)] lg:-rotate-[24deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            data-aos="fade-up"
+            data-aos-delay="0"
             tabindex="0"
           >
             <img
@@ -196,6 +258,8 @@
           <!-- Card 2 -->
           <div
             class="absolute top-0 -translate-x-1/2 z-20 left-[31%] w-[clamp(68px,19vw,96px)] -rotate-[8deg] translate-y-[10%] sm:left-[29%] sm:w-[clamp(86px,19vw,130px)] sm:-rotate-[10deg] sm:translate-y-[12%] lg:left-[28%] lg:w-[clamp(110px,15vw,190px)] lg:-rotate-[12deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            data-aos="fade-up"
+            data-aos-delay="100"
             tabindex="0"
           >
             <img
@@ -208,6 +272,8 @@
           <!-- Card 3 (center) -->
           <div
             class="absolute top-0 -translate-x-1/2 z-30 left-[50%] w-[clamp(74px,20vw,104px)] rotate-0 -translate-y-[12%] sm:w-[clamp(94px,20vw,140px)] sm:-translate-y-[16%] lg:w-[clamp(120px,16vw,200px)] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
             tabindex="0"
           >
             <img
@@ -220,6 +286,8 @@
           <!-- Card 4 -->
           <div
             class="absolute top-0 -translate-x-1/2 z-20 left-[69%] w-[clamp(68px,19vw,96px)] rotate-[8deg] translate-y-[10%] sm:left-[71%] sm:w-[clamp(86px,19vw,130px)] sm:rotate-[10deg] sm:translate-y-[12%] lg:left-[72%] lg:w-[clamp(110px,15vw,190px)] lg:rotate-[12deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
             tabindex="0"
           >
             <img
@@ -232,6 +300,8 @@
           <!-- Card 5 -->
           <div
             class="absolute top-0 -translate-x-1/2 z-10 left-[86%] w-[clamp(68px,19vw,96px)] rotate-[16deg] translate-y-[38%] sm:left-[89%] sm:w-[clamp(86px,19vw,130px)] sm:rotate-[20deg] sm:translate-y-[42%] lg:left-[92%] lg:w-[clamp(110px,15vw,190px)] lg:rotate-[24deg] aspect-[3/4] bg-[#e7e1d6] rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 ease-out motion-reduce:transition-none hover:scale-110 hover:z-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+            data-aos="fade-up"
+            data-aos-delay="400"
             tabindex="0"
           >
             <img
@@ -248,12 +318,17 @@
         <div class="max-w-7xl mx-auto px-4">
           <!-- Section Header -->
           <div class="text-center mb-16">
-            <span class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium">
+            <span
+              class="uppercase tracking-[0.3em] text-[#C89B3C] font-medium"
+              data-aos="fade-up"
+            >
               Traditional Khmer Arts
             </span>
 
             <h2
               class="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 font-primary"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               ប្រភេទ
               <span class="text-[#C89B3C]">របាំខ្មែរ</span>
@@ -261,6 +336,8 @@
 
             <p
               class="max-w-3xl mx-auto mt-6 text-gray-600 text-lg leading-relaxed font-primary"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               ស្វែងយល់ពីប្រភេទរបាំសំខាន់ៗ ដែលបង្ហាញពីសិល្បៈ វប្បធម៌
               និងអត្តសញ្ញាណរបស់ជាតិខ្មែរ។
@@ -272,6 +349,8 @@
             <!-- Card -->
             <article
               class="group relative overflow-hidden rounded-[32px] h-[450px]"
+              data-aos="fade-up"
+              data-aos-delay="0"
             >
               <img
                 src="imgs/apsara.webp"
@@ -303,6 +382,8 @@
             <!-- Card -->
             <article
               class="group relative overflow-hidden rounded-[32px] h-[450px]"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               <img
                 src="imgs/Royal-Ballet-of-Cambodia-2.jpg"
@@ -333,6 +414,8 @@
             <!-- Card -->
             <article
               class="group relative overflow-hidden rounded-[32px] h-[450px]"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <img
                 src="imgs/trot_dance.jpg"
@@ -363,6 +446,8 @@
             <!-- Card -->
             <article
               class="group relative overflow-hidden rounded-[32px] h-[450px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <img
                 src="imgs/lakhon_khol.jpg"
@@ -388,10 +473,10 @@
                   ដើម្បីតំណាងឱ្យតួអង្គផ្សេងៗ ដូចជា ព្រះ រាជា យក្ស ស្វា និងទេវតា
                 </p>
               </div>
-            </article> 
+            </article>
           </div>
         </div>
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-12" data-aos="fade-up">
           <a
             href="pages/history.html"
             class="px-8 py-4 bg-[#C89B3C] text-white rounded-full hover:bg-[#B68A35] transition font-primary"
@@ -406,6 +491,7 @@
         <div class="max-w-7xl mx-auto px-4">
           <div
             class="relative mx-auto w-full max-w-[1400px] h-[700px] md:h-[900px] lg:h-[1100px]"
+            data-aos="zoom-in"
           >
             <div class="absolute inset-0 bg-[#765420] rounded-[50%]"></div>
 
@@ -413,28 +499,38 @@
               src="imgs/top hand.png"
               alt="Top Hand"
               class="absolute z-20 top-[-30px] left-[-140px] w-[500px] md:w-[700px] lg:w-[950px] object-contain pointer-events-none"
+              data-aos="fade-down-right"
             />
             <img
               src="imgs/bottom hand.png"
               alt="Bottom Hand"
               class="absolute z-20 bottom-[-80px] right-[-140px] w-[500px] md:w-[700px] lg:w-[950px] object-contain pointer-events-none"
+              data-aos="fade-up-left"
             />
 
             <div
               class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-6"
             >
               <!-- Top Line -->
-              <div class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mb-8"></div>
+              <div
+                class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mb-8"
+                data-aos="fade-in"
+              ></div>
 
               <h2
                 class="text-white font-primary text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-relaxed max-w-4xl"
+                data-aos="fade-up"
               >
                 “ជីវិតយើងអាចរលត់ <br />
                 តែសិល្បៈនឹងនៅតែបន្តរហូតពីមួយជំនាន់ទៅមួយជំនាន់.”
               </h2>
 
               <!-- Bottom Line -->
-              <div class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mt-8"></div>
+              <div
+                class="w-28 md:w-40 h-[2px] bg-[#C89B3C] mt-8"
+                data-aos="fade-in"
+                data-aos-delay="200"
+              ></div>
             </div>
           </div>
         </div>
@@ -452,24 +548,19 @@
             alt="Logo 1"
             class="w-32 h-32 object-contain"
           />
-          
         </div>
 
         <div
           class="flex flex-col max-lg:mt-3 items-center md:items-start gap-5"
         >
-          <h4 class="font-primary font-semibold text-lg">
-            បណ្តាញសង្គម
-          </h4>
-          <div class="flex gap-4 ">
+          <h4 class="font-primary font-semibold text-lg">បណ្តាញសង្គម</h4>
+          <div class="flex gap-4">
             <!-- Facebook -->
             <a href="">
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-facebook-f text-3xl  text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-facebook-f text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -478,9 +569,7 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-tiktok text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-tiktok text-3xl text-[#765420]"></i>
               </button>
             </a>
 
@@ -489,21 +578,17 @@
               <button
                 class="group relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white transition-all duration-300 ease-in-out active:translate-y-[2px] active:shadow-none"
               >
-                <i
-                  class="fa-brands fa-youtube text-3xl text-[#765420]"
-                ></i>
+                <i class="fa-brands fa-youtube text-3xl text-[#765420]"></i>
               </button>
             </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          <h4 class="font-primary font-semibold text-lg">
-            តំណភ្ជាប់រហ័ស
-          </h4>
+          <h4 class="font-primary font-semibold text-lg">តំណភ្ជាប់រហ័ស</h4>
           <a
             href="index.html"
-            class=" font-primary hover:text-yellow-600 transition"
+            class="font-primary hover:text-yellow-600 transition"
             >ទំព័រដើម</a
           >
           <a
@@ -511,7 +596,7 @@
             class="font-primary hover:text-yellow-600 transition"
             >ប្រវត្តិសាស្រ្ត</a
           >
-          
+
           <a
             href="pages/about.html"
             class="font-primary hover:text-yellow-600 transition"
@@ -525,18 +610,14 @@
         </div>
 
         <div class="flex flex-col gap-5 items-center md:items-start">
-          
-          <h4
-            class="font-primary font-semibold text-lg max-sm:text-center"
-          >
+          <h4 class="font-primary font-semibold text-lg max-sm:text-center">
             ឧបត្ថម្ភដោយ
           </h4>
-           <img
+          <img
             src="imgs/Rupp_logo.png"
             alt="Logo 2"
             class="w-27 h-27 object-contain mt-3"
           />
-          
         </div>
       </div>
     </footer>
@@ -550,4 +631,5 @@
     });
   </script>
   <script src="js/hover.js"></script>
+  <script src="js/button.js"></script>
 </html>
